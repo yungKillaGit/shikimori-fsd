@@ -1,6 +1,6 @@
-import React, { FunctionComponent } from 'react';
+import './index.css';
 
-export const App: FunctionComponent = () => (
+export const App = () => (
   <div>
     App
   </div>
