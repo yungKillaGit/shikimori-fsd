@@ -1,7 +1,9 @@
-import './index.css';
+import { Routing } from '@pages';
+import 'shared/styles/index.scss';
+import { withProviders } from './providers';
 
-export const App = () => (
-  <div>
-    App
-  </div>
+const App = () => (
+  <Routing />
 );
+
+export default withProviders(App);

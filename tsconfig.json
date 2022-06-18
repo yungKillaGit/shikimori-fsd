@@ -1,34 +1,39 @@
 {
   "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": false,
-    "skipLibCheck": false,
-    "esModuleInterop": false,
+    "target": "es5",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
+    "noFallthroughCasesInSwitch": true,
+    "module": "esnext",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "baseUrl": ".",
+    "baseUrl": "./src",
     "paths": {
-      "src/*": ["src/*"],
       "@pages": ["pages"],
-      "@features/*": ["features/*"],
-      "@entities/*": ["entities/*"],
-      "@widgets/*": ["widgets/*"],
+      "@widgets": ["widgets"],
+      "@features": ["features"],
+      "@entities": ["entities"],
       "@api": ["shared/api"],
       "@lib": ["shared/lib"],
-      "@ui": ["shared/ui"]
-    }
+      "@ui": ["shared/ui"],
+      "@paths": ["shared/paths"],
+      "@config": ["shared/config"],
+    },
+    "typeRoots": ["./node_modules/@types", "./src/react-app-env.d.ts"]
   },
   "include": [
-    "./src"
-  ],
-  "references": [{ "path": "./tsconfig.node.json"}]
+    "src"
+  ]
 }

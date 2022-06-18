@@ -8,6 +8,9 @@ module.exports = {
     'airbnb',
     'plugin:import/recommended',
     'plugin:react-hooks/recommended',
+    'plugin:tailwindcss/recommended',
+    'plugin:effector/recommended',
+    'plugin:effector/scope',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -20,8 +23,10 @@ module.exports = {
   plugins: [
     'react',
     '@typescript-eslint',
+    'effector'
   ],
   rules: {
+    'react/prop-types': 'off',
     'import/extensions': 'off',
     'react/jsx-filename-extension': 'off',
     'no-trailing-spaces': 'off',
@@ -54,6 +59,8 @@ module.exports = {
     'prefer-object-spread': 'off',
     'import/no-extraneous-dependencies': 'off',
     'react/destructuring-assignment': 'off',
+    'tailwindcss/classnames-order': 'error',
+    'tailwindcss/no-custom-classname': 'off',
   },
   settings: {
     'import/resolver': {
