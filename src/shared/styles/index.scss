@@ -1,0 +1,92 @@
+@import "fonts";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .text {
+        &-head1 {
+            @apply font-head lg:text-[32px] lg:leading-[44px];
+            @apply font-head md:text-[28px] md:leading-[38px];
+            @apply font-head sm:text-[24px] sm:leading-[34px];
+        }
+
+        &-head2 {
+            @apply font-head lg:text-[26px] lg:leading-[36px];
+            @apply font-head md:text-[22px] md:leading-[34px];
+            @apply font-head sm:text-[22px] sm:leading-[32px];
+        }
+
+        &-head3 {
+            @apply font-head lg:text-[24px] lg:leading-[34px];
+            @apply font-head lg-down:text-[20px] lg-down:leading-[30px];
+        }
+
+        &-head4 {
+            @apply font-head lg:text-[22px] lg:leading-[32px];
+            @apply font-head lg-down:text-[18px] lg-down:leading-[28px];
+        }
+
+        &-head5 {
+            @apply font-head lg:text-[20px] lg:leading-[30px];
+            @apply font-head lg-down:text-[17px] lg-down:leading-[26px];
+        }
+
+        &-subhead1 {
+            @apply font-head lg:text-[18px] lg:leading-[28px];
+            @apply font-head md:text-[17px] md:leading-[26px];
+            @apply font-head sm:text-[16px] sm:leading-[24px];
+        }
+
+        &-body1 {
+            @apply font-primary text-[16px] leading-[24px];
+        }
+
+        &-body2 {
+            @apply font-primary text-[14px] leading-[20px];
+        }
+
+        &-button1 {
+            @apply font-head text-[16px] leading-[24px];
+        }
+
+        &-button2 {
+            @apply font-head text-[14px] leading-[20px];
+        }
+    }
+}
+
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+h1 {
+    @apply text-head1;
+}
+
+h2 {
+    @apply text-head2;
+}
+
+h3 {
+    @apply text-head3;
+}
+
+h4 {
+    @apply text-head4;
+}
+
+h5 {
+    @apply text-head5;
+}
+
+button {
+    @apply text-button1;
+}
+
+a, div, p {
+    @apply text-body1;
+}
